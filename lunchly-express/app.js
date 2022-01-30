@@ -7,6 +7,10 @@ const routes = require("./routes");
 
 const app = express();
 
+app.listen(3000, function(){ 
+console.log('App on port 3000'); 
+}) 
+
 // Parse body for urlencoded (non-JSON) data
 app.use(bodyParser.urlencoded({ extended: false }));
 
